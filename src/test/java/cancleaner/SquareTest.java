@@ -30,6 +30,7 @@ public class SquareTest {
 
     @Test
     public void should_generate_half_grids_with_can() {
+        System.out.println(square);
         assertThat(square.getCountsWithCan(), is(50));
     }
 }

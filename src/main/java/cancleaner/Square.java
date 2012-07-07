@@ -1,6 +1,7 @@
 package cancleaner;
 
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Square {
@@ -24,7 +25,7 @@ public class Square {
     }
 
     private void initGirdCans() {
-        RandomCanPositionsProvider randomCanPositionsProvider = new RandomCanPositionsProvider();
+        RandomCanPositionsProvider randomCanPositionsProvider = new RandomCanPositionsProvider(square.length * square[0].length / 2, square.length, square[0].length);
         List<Position> positions = randomCanPositionsProvider.getPositions();
         for (Position position : positions) {
             square[position.getX()][position.getY()].setHasCan(true);
@@ -53,5 +54,21 @@ public class Square {
             }
         }
         return count;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < square.length; i++) {
+            for (int j = 0; j < square[0].length; j++) {
+                if (square[i][j].hasCan()) {
+                    stringBuilder.append("1");
+                } else {
+                    stringBuilder.append("0");
+                }
+            }
+            stringBuilder.append("\r\n");
+        }
+        return stringBuilder.toString();
     }
 }
