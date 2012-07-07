@@ -1,4 +1,12 @@
 package cancleaner.command;
 
-public class DoNothingCommand {
+import cancleaner.Robot;
+
+public class DoNothingCommand implements Command {
+    public DoNothingCommand(Robot robot) {
+    }
+
+    @Override
+    public void execute() {
+    }
 }
