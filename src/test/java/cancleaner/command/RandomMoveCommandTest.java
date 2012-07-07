@@ -1,5 +1,7 @@
-package cancleaner;
+package cancleaner.command;
 
+import cancleaner.Square;
+import cancleaner.command.*;
 import com.google.common.collect.ImmutableList;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,14 +1,15 @@
-package cancleaner;
+package cancleaner.command;
 
-import com.google.common.collect.ImmutableList;
+import cancleaner.Position;
+import cancleaner.Robot;
+import cancleaner.Square;
+import cancleaner.command.*;
+import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.BDDMockito;
-import org.mockito.Mockito;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
-import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -28,7 +29,7 @@ public class CommandTest {
 
         command.execute();
 
-        assertThat(robot.getPosition(), is(new Position(1, 0)));
+        assertThat(robot.getPosition(), Matchers.is(new Position(1, 0)));
     }
 
     @Test

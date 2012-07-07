@@ -2,24 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a757a3-700f-4333-887f-e11762f33a17" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_0_rc1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/ClearCanCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/Command.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/EastCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/NorthCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommandIndexProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/SouthCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/WestCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/cancleaner/CommandTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/cancleaner/RandomMoveCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CanCleaner_GA.iml" afterPath="$PROJECT_DIR$/CanCleaner_GA.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/Grid.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/Grid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/Position.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/Position.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/Robot.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/Robot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/Square.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/Square.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/ClearCanCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/Command.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/EastCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/NorthCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommandIndexProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/SouthCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/WestCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/cancleaner/command/CommandTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/cancleaner/command/RandomMoveCommandTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/ClearCanCommand.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/ClearCanCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/Command.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/Command.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/EastCommand.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/EastCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/NorthCommand.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/NorthCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommand.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommandIndexProvider.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommandIndexProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/SouthCommand.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/SouthCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cancleaner/WestCommand.java" afterPath="$PROJECT_DIR$/src/main/java/cancleaner/command/WestCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/cancleaner/CommandTest.java" afterPath="$PROJECT_DIR$/src/test/java/cancleaner/command/CommandTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/cancleaner/RandomMoveCommandTest.java" afterPath="$PROJECT_DIR$/src/test/java/cancleaner/command/RandomMoveCommandTest.java" />
     </list>
     <ignored path="CanCleaner_GA.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,9 +83,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="CommandTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/CommandTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/command/CommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
+            <state line="79" column="0" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,27 +94,38 @@
         </entry>
       </file>
       <file leaf-file-name="Command.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/Command.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="26" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RandomMoveCommandIndexProvider.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommandIndexProvider.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommandIndexProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+            <state line="4" column="41" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomMoveCommand.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommand.java">
+      <file leaf-file-name="RandomCanPositionsProvider.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/RandomCanPositionsProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="43" selection-start="938" selection-end="938" vertical-scroll-proportion="1.1557018">
+            <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0372807">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomMoveCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="40" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,9 +134,9 @@
         </entry>
       </file>
       <file leaf-file-name="RandomMoveCommandTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/RandomMoveCommandTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/command/RandomMoveCommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="31" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
+            <state line="39" column="31" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,15 +148,6 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="20" column="32" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClearCanCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/ClearCanCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="18" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -189,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cancleaner/EastCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/cancleaner/NorthCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/cancleaner/WestCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/cancleaner/ClearCanCommand.java" />
@@ -205,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/test/java/cancleaner/RandomMoveCommandTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cancleaner/RandomCommandIndexProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommandIndexProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommand.java" />
       </list>
     </option>
   </component>
@@ -426,6 +430,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cancleaner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CanCleaner_GA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CanCleaner_GA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -438,13 +472,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CanCleaner_GA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CanCleaner_GA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cancleaner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/cancleaner" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/cancleaner/command" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -469,6 +533,9 @@
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="cancleaner" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cancleaner.command" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.RandomMoveCommandTest">
@@ -542,8 +609,8 @@
       <module name="CanCleaner_GA" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cancleaner" />
-      <option name="MAIN_CLASS_NAME" value="cancleaner.CommandTest" />
+      <option name="PACKAGE_NAME" value="cancleaner.command" />
+      <option name="MAIN_CLASS_NAME" value="cancleaner.command.CommandTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -564,8 +631,8 @@
       <module name="CanCleaner_GA" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cancleaner" />
-      <option name="MAIN_CLASS_NAME" value="cancleaner.RandomMoveCommandTest" />
+      <option name="PACKAGE_NAME" value="cancleaner.command" />
+      <option name="MAIN_CLASS_NAME" value="cancleaner.command.RandomMoveCommandTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -755,9 +822,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6706507" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23529412" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23672883" sideWeight="0.6706507" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6706507" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -822,13 +889,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/RandomCanPositionsProviderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="4" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
@@ -836,37 +896,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/SouthCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/SouthCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="7" selection-start="195" selection-end="367" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/EastCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/EastCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="78" selection-start="208" selection-end="378" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/NorthCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/NorthCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="44" selection-start="210" selection-end="382" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/WestCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/WestCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="80" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/ClearCanCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/ClearCanCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+        <state line="13" column="18" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -899,41 +959,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/Command.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/CommandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/command/CommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="1922" selection-end="1922" vertical-scroll-proportion="0.0">
+        <state line="79" column="0" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/RandomMoveCommandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/cancleaner/command/RandomMoveCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="31" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0">
+        <state line="39" column="31" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommandIndexProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+        <state line="16" column="40" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/command/RandomMoveCommandIndexProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="41" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/RandomMoveCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cancleaner/RandomCanPositionsProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="43" selection-start="938" selection-end="938" vertical-scroll-proportion="1.1557018">
+        <state line="5" column="13" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0372807">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

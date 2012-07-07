@@ -1,4 +1,4 @@
-package cancleaner;
+package cancleaner.command;
 
 public class RandomMoveCommandIndexProvider {
     public int getCommandIndex() {

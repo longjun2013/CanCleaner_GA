@@ -1,4 +1,7 @@
-package cancleaner;
+package cancleaner.command;
+
+import cancleaner.Position;
+import cancleaner.Robot;
 
 public class WestCommand implements Command {
     private Robot robot;

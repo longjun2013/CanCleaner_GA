@@ -1,4 +1,6 @@
-package cancleaner;
+package cancleaner.command;
+
+import cancleaner.Robot;
 
 public class ClearCanCommand implements Command {
     private Robot robot;
