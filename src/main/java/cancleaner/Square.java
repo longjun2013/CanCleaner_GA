@@ -1,7 +1,6 @@
 package cancleaner;
 
 
-import java.util.Arrays;
 import java.util.List;
 
 public class Square {
@@ -12,7 +11,7 @@ public class Square {
     public Square(int x, int y) {
         square = new Grid[x][y];
         initGrids();
-        robot = new Robot(new Position(0, 0));
+        robot = new Robot(new Position(0, 0), this);
     }
 
     private void initGrids() {
@@ -70,5 +69,17 @@ public class Square {
             stringBuilder.append("\r\n");
         }
         return stringBuilder.toString();
+    }
+
+    public void setCan(Position position) {
+        square[position.getX()][position.getY()].setHasCan(true);
+    }
+
+    public Boolean hasCan(Position position) {
+        return square[position.getX()][position.getY()].hasCan();
+    }
+
+    public void cleanCan(Position position) {
+        square[position.getX()][position.getY()].cleanCan();
     }
 }

@@ -10,4 +10,8 @@ public class Grid {
     public void setHasCan(boolean hasCan) {
         this.hasCan = hasCan;
     }
+
+    public void cleanCan() {
+        this.hasCan = false;
+    }
 }

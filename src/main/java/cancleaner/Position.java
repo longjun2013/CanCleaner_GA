@@ -4,6 +4,7 @@ public class Position {
     private final int x;
     private final int y;
 
+
     public Position(int x, int y) {
         this.x = x;
         this.y = y;
@@ -35,5 +36,13 @@ public class Position {
         int result = x;
         result = 31 * result + y;
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Position{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
     }
 }
