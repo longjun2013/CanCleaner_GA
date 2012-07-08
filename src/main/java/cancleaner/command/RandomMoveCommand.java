@@ -15,6 +15,7 @@ public class RandomMoveCommand implements Command {
                 new SouthCommand(robot),
                 new WestCommand(robot),
                 new EastCommand(robot));
+        randomMoveCommandIndexProvider = new RandomMoveCommandIndexProvider();
     }
 
     @Override

@@ -2,4 +2,6 @@ CanCleaner_GA
 =============
 
 CanCleaner with GA
-Thanks.
+How to Run:
+mvn clean install
+mvn exec:java -Dexec.mainClass="cancleaner.Main"
