@@ -30,5 +30,10 @@
           <artifactId>mockito-all</artifactId>
           <version>1.9.0-rc1</version>
       </dependency>
+      <dependency>
+          <groupId>com.googlecode.lambdaj</groupId>
+          <artifactId>lambdaj</artifactId>
+          <version>2.3.3</version>
+      </dependency>
   </dependencies>
 </project>

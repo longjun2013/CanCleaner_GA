@@ -2,10 +2,10 @@ package cancleaner.command;
 
 import cancleaner.Robot;
 
-public class ClearCanCommand implements Command {
+public class CleanCanCommand implements Command {
     private Robot robot;
 
-    public ClearCanCommand(Robot robot) {
+    public CleanCanCommand(Robot robot) {
         this.robot = robot;
     }
 

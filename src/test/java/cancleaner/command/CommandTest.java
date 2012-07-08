@@ -3,15 +3,12 @@ package cancleaner.command;
 import cancleaner.Position;
 import cancleaner.Robot;
 import cancleaner.Square;
-import cancleaner.command.*;
 import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
 
 public class CommandTest {
 
@@ -69,8 +66,7 @@ public class CommandTest {
         Position position = new Position(0, 0);
         square.setCan(position);
         Robot robot = square.getRobot();
-
-        Command command = new ClearCanCommand(robot);
+        Command command = new CleanCanCommand(robot);
 
         command.execute();
 

@@ -1,7 +1,6 @@
 package cancleaner.command;
 
 import cancleaner.Square;
-import cancleaner.command.*;
 import com.google.common.collect.ImmutableList;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,7 +18,7 @@ public class RandomMoveCommandTest {
     private SouthCommand mockSouthCommand;
     private WestCommand mockWestCommand;
     private EastCommand mockEastCommand;
-    private ClearCanCommand mockClearCanCommand;
+    private CleanCanCommand mockCleanCanCommand;
 
     @Before
     public void setUp() {
@@ -31,7 +30,7 @@ public class RandomMoveCommandTest {
         mockSouthCommand = mock(SouthCommand.class);
         mockWestCommand = mock(WestCommand.class);
         mockEastCommand = mock(EastCommand.class);
-        mockClearCanCommand = mock(ClearCanCommand.class);
+        mockCleanCanCommand = mock(CleanCanCommand.class);
 
         randomMoveCommand.setCommands(ImmutableList.of(
                 mockNorthCommand,

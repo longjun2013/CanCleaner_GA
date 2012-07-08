@@ -1,6 +1,5 @@
 package cancleaner.command;
 
-import cancleaner.Position;
 import cancleaner.Robot;
 
 public class WestCommand implements Command {
@@ -12,8 +11,7 @@ public class WestCommand implements Command {
 
     @Override
     public void execute() {
-        Position original = robot.getPosition();
-        Position newPosition = new Position(original.getX(), original.getY() - 1);
-        robot.setPosition(newPosition);
+        robot.moveToWest();
     }
+
 }

@@ -15,8 +15,8 @@ public class Square {
     }
 
     private void initGrids() {
-        for (int i = 0; i < square.length; i++) {
-            for (int j = 0; j < square[0].length; j++) {
+        for (int i = 0; i < getXLength(); i++) {
+            for (int j = 0; j < getYLength(); j++) {
                 square[i][j] = new Grid();
             }
         }
@@ -24,10 +24,10 @@ public class Square {
     }
 
     private void initGirdCans() {
-        RandomCanPositionsProvider randomCanPositionsProvider = new RandomCanPositionsProvider(square.length * square[0].length / 2, square.length, square[0].length);
+        RandomCanPositionsProvider randomCanPositionsProvider = new RandomCanPositionsProvider(getXLength() * getYLength() / 2, getXLength(), getYLength());
         List<Position> positions = randomCanPositionsProvider.getPositions();
         for (Position position : positions) {
-            square[position.getX()][position.getY()].setHasCan(true);
+            getGrid(position).setHasCan(true);
         }
     }
 
@@ -45,8 +45,8 @@ public class Square {
 
     public int getCountsWithCan() {
         int count = 0;
-        for (int i = 0; i < square.length; i++) {
-            for (int j = 0; j < square[0].length; j++) {
+        for (int i = 0; i < getXLength(); i++) {
+            for (int j = 0; j < getYLength(); j++) {
                 if (square[i][j].hasCan()) {
                     count++;
                 }
@@ -58,8 +58,8 @@ public class Square {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < square.length; i++) {
-            for (int j = 0; j < square[0].length; j++) {
+        for (int i = 0; i < getXLength(); i++) {
+            for (int j = 0; j < getYLength(); j++) {
                 if (square[i][j].hasCan()) {
                     stringBuilder.append("1");
                 } else {
@@ -72,14 +72,27 @@ public class Square {
     }
 
     public void setCan(Position position) {
-        square[position.getX()][position.getY()].setHasCan(true);
+        getGrid(position).setHasCan(true);
     }
 
+
     public Boolean hasCan(Position position) {
-        return square[position.getX()][position.getY()].hasCan();
+        return getGrid(position).hasCan();
     }
 
     public void cleanCan(Position position) {
-        square[position.getX()][position.getY()].cleanCan();
+        getGrid(position).cleanCan();
     }
+
+    private Grid getGrid(Position position) {
+        return square[position.getX()][position.getY()];
+    }
+
+    boolean isWall(Position position) {
+        return position.getY() > getYLength() - 1
+                || position.getX() > getXLength() - 1
+                || position.getY() < 0
+                || position.getX() < 0;
+    }
+
 }
