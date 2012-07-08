@@ -18,7 +18,6 @@ public class RandomMoveCommandTest {
     private SouthCommand mockSouthCommand;
     private WestCommand mockWestCommand;
     private EastCommand mockEastCommand;
-    private CleanCanCommand mockCleanCanCommand;
 
     @Before
     public void setUp() {
@@ -30,7 +29,6 @@ public class RandomMoveCommandTest {
         mockSouthCommand = mock(SouthCommand.class);
         mockWestCommand = mock(WestCommand.class);
         mockEastCommand = mock(EastCommand.class);
-        mockCleanCanCommand = mock(CleanCanCommand.class);
 
         randomMoveCommand.setCommands(ImmutableList.of(
                 mockNorthCommand,

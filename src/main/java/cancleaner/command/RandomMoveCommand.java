@@ -6,12 +6,10 @@ import com.google.common.collect.ImmutableList;
 import java.util.List;
 
 public class RandomMoveCommand implements Command {
-    private Robot robot;
     private List<Command> commands;
     private RandomMoveCommandIndexProvider randomMoveCommandIndexProvider;
 
     public RandomMoveCommand(Robot robot) {
-        this.robot = robot;
         commands = ImmutableList.of(
                 new NorthCommand(robot),
                 new SouthCommand(robot),
