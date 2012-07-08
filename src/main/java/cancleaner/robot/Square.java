@@ -1,4 +1,4 @@
-package cancleaner;
+package cancleaner.robot;
 
 
 import java.util.List;

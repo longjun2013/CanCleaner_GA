@@ -1,10 +1,11 @@
-package cancleaner;
+package cancleaner.robot;
 
+import cancleaner.robot.RobotSituation;
 import org.junit.Test;
 
-import static cancleaner.RobotSituation.CAN;
-import static cancleaner.RobotSituation.EMPTY;
-import static cancleaner.RobotSituation.WALL;
+import static cancleaner.robot.RobotSituation.CAN;
+import static cancleaner.robot.RobotSituation.EMPTY;
+import static cancleaner.robot.RobotSituation.WALL;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 

@@ -1,5 +1,7 @@
-package cancleaner;
+package cancleaner.robot;
 
+import cancleaner.robot.Position;
+import cancleaner.robot.RandomCanPositionsProvider;
 import org.junit.Before;
 import org.junit.Test;
 

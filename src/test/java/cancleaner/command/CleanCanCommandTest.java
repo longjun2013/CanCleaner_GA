@@ -1,10 +1,8 @@
 package cancleaner.command;
 
-import cancleaner.Position;
-import cancleaner.Robot;
-import cancleaner.Square;
-import org.hamcrest.Matchers;
-import org.junit.Assert;
+import cancleaner.robot.Position;
+import cancleaner.robot.Robot;
+import cancleaner.robot.Square;
 import org.junit.Before;
 import org.junit.Test;
 

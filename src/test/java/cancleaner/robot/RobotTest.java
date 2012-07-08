@@ -1,5 +1,9 @@
-package cancleaner;
+package cancleaner.robot;
 
+import cancleaner.robot.Position;
+import cancleaner.robot.Robot;
+import cancleaner.robot.RobotSituation;
+import cancleaner.robot.Square;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package cancleaner;
+package cancleaner.robot;
 
 public class RobotSituation {
     public static final int EMPTY = 0;

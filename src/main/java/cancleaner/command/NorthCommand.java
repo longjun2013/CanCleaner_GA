@@ -1,6 +1,6 @@
 package cancleaner.command;
 
-import cancleaner.Robot;
+import cancleaner.robot.Robot;
 
 public class NorthCommand implements Command {
     private Robot robot;

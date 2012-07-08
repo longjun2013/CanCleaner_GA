@@ -1,14 +1,11 @@
 package cancleaner.command;
 
-import cancleaner.Position;
-import cancleaner.Robot;
-import cancleaner.Square;
+import cancleaner.robot.Position;
+import cancleaner.robot.Robot;
+import cancleaner.robot.Square;
 import com.google.common.collect.ImmutableList;
-import org.hamcrest.Matchers;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

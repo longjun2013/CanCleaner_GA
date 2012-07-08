@@ -1,6 +1,6 @@
 package cancleaner.command;
 
-import cancleaner.Robot;
+import cancleaner.robot.Robot;
 import com.google.common.collect.ImmutableList;
 
 import java.util.List;

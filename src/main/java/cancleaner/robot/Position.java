@@ -1,4 +1,4 @@
-package cancleaner;
+package cancleaner.robot;
 
 public class Position {
     private final int x;

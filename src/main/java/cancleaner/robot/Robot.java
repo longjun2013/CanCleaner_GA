@@ -1,7 +1,5 @@
-package cancleaner;
+package cancleaner.robot;
 
-
-import static cancleaner.RobotSituation.*;
 
 public class Robot {
     private Position position;
@@ -36,20 +34,20 @@ public class Robot {
 
     private int getMiddleSituation() {
         if (square.hasCan(position)) {
-            return CAN;
+            return RobotSituation.CAN;
         }
-        return EMPTY;
+        return RobotSituation.EMPTY;
     }
 
     private int getEastSituation() {
         Position eastPosition = getEastPosition(position);
         if (square.isWall(eastPosition)) {
-            return WALL;
+            return RobotSituation.WALL;
         }
         if (square.hasCan(eastPosition)) {
-            return CAN;
+            return RobotSituation.CAN;
         }
-        return EMPTY;
+        return RobotSituation.EMPTY;
     }
 
     public Position getEastPosition(Position currentPosition) {
@@ -59,12 +57,12 @@ public class Robot {
     private int getWestSituation() {
         Position westPosition = getWestPosition(position);
         if (square.isWall(westPosition)) {
-            return WALL;
+            return RobotSituation.WALL;
         }
         if (square.hasCan(westPosition)) {
-            return CAN;
+            return RobotSituation.CAN;
         }
-        return EMPTY;
+        return RobotSituation.EMPTY;
     }
 
     public Position getWestPosition(Position currentPosition) {
@@ -74,12 +72,12 @@ public class Robot {
     private int getSouthSituation() {
         Position southPosition = getSouthPosition(position);
         if (square.isWall(southPosition)) {
-            return WALL;
+            return RobotSituation.WALL;
         }
         if (square.hasCan(southPosition)) {
-            return CAN;
+            return RobotSituation.CAN;
         }
-        return EMPTY;
+        return RobotSituation.EMPTY;
     }
 
     public Position getSouthPosition(Position currentPosition) {
@@ -89,12 +87,12 @@ public class Robot {
     private int getNorthSituation() {
         Position northPosition = getNorthPosition(position);
         if (square.isWall(northPosition)) {
-            return WALL;
+            return RobotSituation.WALL;
         }
         if (square.hasCan(northPosition)) {
-            return CAN;
+            return RobotSituation.CAN;
         }
-        return EMPTY;
+        return RobotSituation.EMPTY;
     }
 
     public Position getNorthPosition(Position currentPosition) {
