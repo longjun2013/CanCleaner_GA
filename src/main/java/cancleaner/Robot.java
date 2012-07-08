@@ -1,8 +1,7 @@
 package cancleaner;
 
-import static cancleaner.RobotSituation.CAN;
-import static cancleaner.RobotSituation.EMPTY;
-import static cancleaner.RobotSituation.WALL;
+
+import static cancleaner.RobotSituation.*;
 
 public class Robot {
     private Position position;
