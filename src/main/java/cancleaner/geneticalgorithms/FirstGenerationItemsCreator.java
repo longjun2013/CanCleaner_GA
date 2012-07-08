@@ -9,7 +9,6 @@ class FirstGenerationItemsCreator {
         ArrayList<Item> items = new ArrayList<Item>();
         for (int i = 0; i < 200; i++) {
             Item item = new Item(1);
-            item.setId(i + 1);
             item.setGene(createRandomGen());
             items.add(item);
         }

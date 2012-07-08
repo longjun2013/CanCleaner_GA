@@ -8,17 +8,22 @@ public class GenerationRunner {
 
     private LogWriter logWriter;
     private List<Item> items;
+    private final MixGenerationItemsCreator mixGenerationItemsCreator;
 
     public GenerationRunner() {
         logWriter = new LogWriter();
         items = new FirstGenerationItemsCreator().create();
+        mixGenerationItemsCreator = new MixGenerationItemsCreator();
     }
 
     public void run() {
-        for (Item item : items) {
-            item.run();
+        while (true) {
+            for (Item item : items) {
+                item.run();
+            }
+            write();
+            items = mixGenerationItemsCreator.create(items);
         }
-        write();
     }
 
     public void setLogWriter(LogWriter logWriter) {
@@ -26,6 +31,15 @@ public class GenerationRunner {
     }
 
     private void write() {
-        logWriter.write("generation_1", ItemsContentUtils.getContents(items));
+        logWriter.write("generation_" + items.get(0).getGenerationId(), ItemsContentUtils.getContents(items));
+        System.out.println("generation_" + items.get(0).getGenerationId() + ": average score:" + getAverageScore());
+    }
+
+    private int getAverageScore() {
+        int score = 0;
+        for (Item item : items) {
+            score += item.getScore();
+        }
+        return score / items.size();
     }
 }

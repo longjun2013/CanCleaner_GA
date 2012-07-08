@@ -28,14 +28,6 @@ public class FirstGenerationItemsCreatorTest {
     }
 
     @Test
-    public void should_create_items_with_sequence_id() {
-        List<Item> items = new FirstGenerationItemsCreator().create();
-
-        assertThat(items.get(0).getId(), is(1));
-        assertThat(items.get(199).getId(), is(200));
-    }
-
-    @Test
     public void should_create_items_with_gene() {
         List<Item> items = new FirstGenerationItemsCreator().create();
 

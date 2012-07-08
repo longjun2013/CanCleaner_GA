@@ -6,7 +6,6 @@ import cancleaner.robot.Square;
 
 public class Item {
     private int generationId;
-    private int id;
     private String gene;
     private int score;
 
@@ -16,14 +15,6 @@ public class Item {
 
     public int getGenerationId() {
         return generationId;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getGene() {
@@ -56,10 +47,14 @@ public class Item {
 
     @Override
     public String toString() {
-        return id + ":" + gene + ":" + score;
+        return gene + ":" + score;
     }
 
     public int getScore() {
         return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }

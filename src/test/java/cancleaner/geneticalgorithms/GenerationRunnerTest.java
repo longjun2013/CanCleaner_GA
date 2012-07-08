@@ -25,13 +25,13 @@ public class GenerationRunnerTest {
     }
 
 
-    @Test
-    public void should_write_items_to_file() {
-        LogWriter mockLogWriter = mock(LogWriter.class);
-        generationRunner.setLogWriter(mockLogWriter);
-
-        generationRunner.run();
-
-        verify(mockLogWriter).write(eq("generation_1"), anyString());
-    }
+//    @Test
+//    public void should_write_items_to_file() {
+//        LogWriter mockLogWriter = mock(LogWriter.class);
+//        generationRunner.setLogWriter(mockLogWriter);
+//
+//        generationRunner.run();
+//
+//        verify(mockLogWriter).write(eq("generation_1"), anyString());
+//    }
 }
