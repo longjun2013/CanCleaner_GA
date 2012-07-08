@@ -19,8 +19,8 @@ public class RobotTest {
 
     @Test
     public void should_get_current_situation_with_wall_in_north() {
-        Situation situation = robot.getSituation();
-        assertThat(situation.getNorth(), is(Situation.WALL));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getNorth(), is(RobotSituation.WALL));
     }
 
     @Test
@@ -28,8 +28,8 @@ public class RobotTest {
         robot.setPosition(new Position(1, 0));
         square.setCan(new Position(0, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getNorth(), is(Situation.CAN));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getNorth(), is(RobotSituation.CAN));
     }
 
     @Test
@@ -37,38 +37,38 @@ public class RobotTest {
         robot.setPosition(new Position(1, 0));
         square.cleanCan(new Position(0, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getNorth(), is(Situation.EMPTY));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getNorth(), is(RobotSituation.EMPTY));
     }
 
     @Test
     public void should_get_current_situation_with_wall_in_south() {
         robot.setPosition(new Position(9, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getSouth(), is(Situation.WALL));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getSouth(), is(RobotSituation.WALL));
     }
 
     @Test
     public void should_get_current_situation_with_can_in_south() {
         square.setCan(new Position(1, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getSouth(), is(Situation.CAN));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getSouth(), is(RobotSituation.CAN));
     }
 
     @Test
     public void should_get_current_situation_with_empty_in_south() {
         square.cleanCan(new Position(1, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getSouth(), is(Situation.EMPTY));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getSouth(), is(RobotSituation.EMPTY));
     }
 
     @Test
     public void should_get_current_situation_with_wall_in_west() {
-        Situation situation = robot.getSituation();
-        assertThat(situation.getWest(), is(Situation.WALL));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getWest(), is(RobotSituation.WALL));
     }
 
     @Test
@@ -76,8 +76,8 @@ public class RobotTest {
         robot.setPosition(new Position(0, 1));
         square.setCan(new Position(0, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getWest(), is(Situation.CAN));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getWest(), is(RobotSituation.CAN));
     }
 
     @Test
@@ -85,47 +85,47 @@ public class RobotTest {
         robot.setPosition(new Position(0, 1));
         square.cleanCan(new Position(0, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getWest(), is(Situation.EMPTY));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getWest(), is(RobotSituation.EMPTY));
     }
 
     @Test
     public void should_get_current_situation_with_wall_in_east() {
         robot.setPosition(new Position(0, 9));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getEast(), is(Situation.WALL));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getEast(), is(RobotSituation.WALL));
     }
 
     @Test
     public void should_get_current_situation_with_can_in_east() {
         square.setCan(new Position(0, 1));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getEast(), is(Situation.CAN));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getEast(), is(RobotSituation.CAN));
     }
 
     @Test
     public void should_get_current_situation_with_empty_in_east() {
         square.cleanCan(new Position(0, 1));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getEast(), is(Situation.EMPTY));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getEast(), is(RobotSituation.EMPTY));
     }
 
     @Test
     public void should_get_current_situation_with_can_in_middle() {
         square.setCan(new Position(0, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getMiddle(), is(Situation.CAN));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getMiddle(), is(RobotSituation.CAN));
     }
 
     @Test
     public void should_get_current_situation_with_empty_in_middle() {
         square.cleanCan(new Position(0, 0));
 
-        Situation situation = robot.getSituation();
-        assertThat(situation.getMiddle(), is(Situation.EMPTY));
+        RobotSituation robotSituation = robot.getSituation();
+        assertThat(robotSituation.getMiddle(), is(RobotSituation.EMPTY));
     }
 }

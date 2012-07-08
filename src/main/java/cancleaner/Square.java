@@ -55,6 +55,30 @@ public class Square {
         return count;
     }
 
+    public void setCan(Position position) {
+        getGrid(position).setHasCan(true);
+    }
+
+    public Boolean hasCan(Position position) {
+        return getGrid(position).hasCan();
+    }
+
+
+    public void cleanCan(Position position) {
+        getGrid(position).cleanCan();
+    }
+
+    private Grid getGrid(Position position) {
+        return square[position.getX()][position.getY()];
+    }
+
+    public boolean isWall(Position position) {
+        return position.getY() > getYLength() - 1
+                || position.getX() > getXLength() - 1
+                || position.getY() < 0
+                || position.getX() < 0;
+    }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -69,30 +93,6 @@ public class Square {
             stringBuilder.append("\r\n");
         }
         return stringBuilder.toString();
-    }
-
-    public void setCan(Position position) {
-        getGrid(position).setHasCan(true);
-    }
-
-
-    public Boolean hasCan(Position position) {
-        return getGrid(position).hasCan();
-    }
-
-    public void cleanCan(Position position) {
-        getGrid(position).cleanCan();
-    }
-
-    private Grid getGrid(Position position) {
-        return square[position.getX()][position.getY()];
-    }
-
-    boolean isWall(Position position) {
-        return position.getY() > getYLength() - 1
-                || position.getX() > getXLength() - 1
-                || position.getY() < 0
-                || position.getX() < 0;
     }
 
 }

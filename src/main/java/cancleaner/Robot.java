@@ -1,8 +1,8 @@
 package cancleaner;
 
-import static cancleaner.Situation.CAN;
-import static cancleaner.Situation.EMPTY;
-import static cancleaner.Situation.WALL;
+import static cancleaner.RobotSituation.CAN;
+import static cancleaner.RobotSituation.EMPTY;
+import static cancleaner.RobotSituation.WALL;
 
 public class Robot {
     private Position position;
@@ -31,8 +31,8 @@ public class Robot {
         square.cleanCan(position);
     }
 
-    public Situation getSituation() {
-        return new Situation(getNorthSituation(), getSouthSituation(), getWestSituation(), getEastSituation(), getMiddleSituation());
+    public RobotSituation getSituation() {
+        return new RobotSituation(getNorthSituation(), getSouthSituation(), getWestSituation(), getEastSituation(), getMiddleSituation());
     }
 
     private int getMiddleSituation() {

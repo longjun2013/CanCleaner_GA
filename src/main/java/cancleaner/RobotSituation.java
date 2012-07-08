@@ -1,6 +1,6 @@
 package cancleaner;
 
-public class Situation {
+public class RobotSituation {
     public static final int EMPTY = 0;
     public static final int CAN = 1;
     public static final int WALL = 2;
@@ -11,7 +11,7 @@ public class Situation {
     private int east;
     private int middle;
 
-    public Situation(int north, int south, int west, int east, int middle) {
+    public RobotSituation(int north, int south, int west, int east, int middle) {
         this.north = north;
         this.south = south;
         this.west = west;
@@ -37,5 +37,13 @@ public class Situation {
 
     public int getMiddle() {
         return middle;
+    }
+
+    public int getCode() {
+        return north * 3 * 3 * 3 * 3
+                + south * 3 * 3 * 3
+                + west * 3 * 3
+                + east * 3
+                + middle;
     }
 }
